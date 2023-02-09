@@ -1,4 +1,2448 @@
-[  {"product": "Websecurity-WAF",
+[{
+    "product": "Vue",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "chunk-vendors."
+        }], 
+        [{
+            "match": "body_contains",
+            "content": "Please enable JavaScript to continue"
+        }]
+    ]
+},{
+    "product": "emqx",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/static/emq.ico"
+        }, {
+            "match": "body_contains",
+            "content": "/static/js/env.js"
+        }]
+    ]
+},{
+    "product": "金和OA",
+    "rules": [
+        [
+            {
+                "match": "body_contains",
+                "content": "location.href = \"/c6\";"
+            }
+        ],  [
+        {
+          "match": "body_contains",
+          "content": "location.href = '/jc6/';"
+        }
+      ], [
+        {
+          "match": "body_contains",
+          "content": "C6/Jhsoft.Web.login"
+        }
+      ],[
+        {
+          "match": "header_contains",
+          "content": "/jc6"
+        }
+      ],[
+        {
+          "match": "body_contains",
+          "content": "url=/jc6"
+        }
+      ],[
+        {
+          "match": "body_contains",
+          "content": "CloseWindowNoAsk()"
+        }
+      ]
+    ]
+},{
+    "product": "执掌易",
+    "rules": [
+        [
+            {
+                "match": "body_contains",
+                "content": "loading..."
+            },
+    {
+                "match": "body_contains",
+                "content": "build/framework/js"
+            }
+        ]
+    ]
+},{
+    "product": "中科汇联eportal",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "huilan"
+        }, {
+            "match": "body_contains",
+            "content": "eportal/ui"
+        }]
+    ]
+}, {
+    "product": "深信服安全感知平台-SangForSip",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "title>安全感知平台</title>"
+        }, {
+            "match": "body_contains",
+            "content": "sip.common"
+        }]
+    ]
+}, {
+    "product": "Hillstone-山石网科云数据库审计与防护系统",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/scan/sensitiveScan"
+        }]
+    ]
+}, {
+    "product": "中科网威安全控制系统",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "<title>anysec</title>"
+        }, {
+            "match": "body_contains",
+            "content": "深圳市中科网威科技有限公司"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<title>Netsys </title>"
+        }]
+    ]
+}, {
+    "product": "Odoo",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "window.location = '/web' + location.hash;"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<title>Odoo</title>"
+        }]
+    ]
+}, {
+    "product": "中远麒麟iAudit堡垒机",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "window.parent.parent.location.href='admin.php?controller=admin_index&action=login';"
+        }]
+    ]
+}, {
+    "product": "huiwen-book",
+    "rules": [
+        [{
+            "match": "favicon_contains",
+            "content": "1805953451"
+        }]
+    ]
+}, {
+    "product": "杭州瑞成信息技术有限公司",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/public/login/"
+        }, {
+            "match": "body_contains",
+            "content": "risen"
+        }]
+    ]
+}, {
+    "product": "MongoDB",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "trying to access MongoDB over HTTP"
+        }]
+    ]
+}, {
+    "product": "安恒明御网络安全审计系统",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "网络安全审计系统"
+        }, {
+            "match": "body_contains",
+            "content": "杭州安恒"
+        }]
+    ]
+}, {
+    "product": "yealink-亿联视频会议管理平台",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/yms/fileserver/"
+        }]
+    ]
+}, {
+    "product": "siyucms",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "siyucms.com"
+        }]
+    ]
+}, {
+    "product": "Fortigate-SSL-VPN",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "top.location=\"/remote/login\";"
+        }, {
+            "match": "body_contains",
+            "content": "if (window!=top) top.location=window.location;"
+        }]
+    ]
+}, {
+    "product": "启明星辰-天清汉马VPN",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "vpn/user/common/custom"
+        }, {
+            "match": "header_contains",
+            "content": "appframe"
+        }]
+    ]
+}, {
+    "product": "东软-UniPortal",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "ecdomain"
+        }]
+    ]
+}, {
+    "product": "Keycloak",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "Welcome to Keycloak"
+        }]
+    ]
+}, {
+    "product": "可道云(kodbox)",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "kodbox"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "Powered by kodbox"
+        }]
+    ]
+}, {
+    "product": "Adminer",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "Adminer"
+        }]
+    ]
+}, {
+    "product": "JeeSite",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/a/login"
+        }]
+    ]
+}, {
+    "product": "Apache NiFi",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "NiFi"
+        }, {
+            "match": "body_contains",
+            "content": "/nifi/"
+        }]
+    ]
+}, {
+    "product": "MeePo（麦谱）云存储",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "Meepo管理界面"
+        }]
+    ]
+}, {
+    "product": "smartbi",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/smartbi/index.jsp"
+        }]
+    ]
+}, {
+    "product": "TrigCms",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "TrigAdmMS-bipt-welcome/trigcmsFront"
+        }]
+    ]
+}, {
+    "product": "dtcms",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "动力启航,DTCMS系统"
+        }]
+    ]
+}, {
+    "product": "深信服集中管理平台-SangFor",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "BBC LOGIN"
+        }, {
+            "match": "body_contains",
+            "content": "3parts/babelRuntime.js"
+        }]
+    ]
+}, {
+    "product": "人人站CMS-rrzcms",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "rrz-header"
+        }, {
+            "match": "body_contains",
+            "content": "rrz.js"
+        }]
+    ]
+}, {
+    "product": "TRS-IDS",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "TRSIDS"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "trsidsssosessionid"
+        }]
+    ]
+}, {
+    "product": "Oracle Containers for J2EE",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "Oracle Containers for J2EE"
+        }]
+    ]
+}, {
+    "product": "WebLogic-Server-管理控制台",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "Oracle WebLogic Server 管理控制台"
+        }]
+    ]
+}, {
+    "product": "DaHua-Products",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "id=\"lab_loading\" class=\"j_load_p"
+        }]
+    ]
+}, {
+    "product": "Microsoft Azure",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "Microsoft Azure"
+        }]
+    ]
+}, {
+    "product": "Flask-Framework",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "X-Powered-By: Flask"
+        }]
+    ]
+}, {
+    "product": "ZyXEL Prestige Router",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "ZyXEL Prestige Router"
+        }]
+    ]
+}, {
+    "product": "Apache APISIX",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "Apache APISIX Dashboard"
+        }]
+    ]
+}, {
+    "product": "NetComm Wireless Router",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "NetComm Wireless Router"
+        }]
+    ]
+}, {
+    "product": "Event Debug Server",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "Event Debug Server"
+        }]
+    ]
+}, {
+    "product": "ZABBIX-监控系统",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "zbx_session="
+        }]
+    ]
+}, {
+    "product": "iShield NG5 ",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "iShieldNG"
+        }]
+    ]
+}, {
+    "product": "Sentry",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "Sentry"
+        }]
+    ]
+}, {
+    "product": "ZurmoCRM",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "ZurmoCRM"
+        }]
+    ]
+}, {
+    "product": "Yealink VP59 Phone",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "Flagship Smart Video Phone VP59"
+        }]
+    ]
+}, {
+    "product": "思福迪堡垒机-Logbase",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/cgi-bh/login.cgi"
+        }]
+    ]
+}, {
+    "product": "大华摄像头-Dahua",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/jsCore/app"
+        }]
+    ]
+}, {
+    "product": "otcms",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "OTca.js"
+        }]
+    ]
+}, {
+    "product": "锐捷产品",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "4008 111 000"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "support.ruijie.com.cn"
+        }]
+    ]
+}, {
+    "product": "Apache ShenYu",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "id=\"httpPath\""
+        }, {
+            "match": "body_contains",
+            "content": "th:text=\"${domain}\""
+        }]
+    ]
+}, {
+    "product": "达梦数据库企业管理系统",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "达梦数据库 | 数据库企业管理系统"
+        }]
+    ]
+}, {
+    "product": "PHPSHE",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "powered by phpshe"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"phpshe"
+        }]
+    ]
+}, {
+    "product": "CNPOWER-OA(OA8000)",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/oaapp/webobjects/oaapp.woa"
+        }]
+    ]
+}, {
+    "product": "ThinkSAAS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "href=\"https://www.thinksaas.cn/app/home/skins/default/style.css\""
+        }]
+    ]
+}, {
+    "product": "E-Tiller",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "reader/view_abstract.aspx"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "北京勤云"
+        }]
+    ]
+}, {
+    "product": "MongoDb",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "<a href=\"/_replset\">replica set status</a></p>"
+        }],
+        [{
+            "match": "protocol_contains",
+            "content": "mongodb"
+        }, {
+            "match": "body_contains",
+            "content": "you are trying to access mongodb"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "mongod.exe"
+        }]
+    ]
+}, {
+    "product": "YiRui-IRAS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/authjsp/login.jsp"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "fe0174bb-f093-42af-ab20-7ec621d10488"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "易瑞授权访问系统"
+        }]
+    ]
+}, {
+    "product": "FangMail",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/fangmail/default/css/em_css.css"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/fangmail/cgi/index.cgi"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "esmtp fangmail"
+        }]
+    ]
+}, {
+    "product": "腾讯企业邮箱-Tencent-Exmail",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/cgi-bin/getinvestigate?flowid="
+        }],
+        [{
+            "match": "header_contains",
+            "content": "ssl_edition=mail.qq.com"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/cgi-bin/bizmail_portal"
+        }, {
+            "match": "title_contains",
+            "content": "腾讯企业邮箱"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"登录腾讯企业邮箱"
+        }]
+    ]
+}, {
+    "product": "TongDa-OA",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/static/templates/2013_01/index.css/"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "javascript:document.form1.uname.focus()"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "href=\"/static/images/tongda.ico\""
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<link rel=\"shortcut icon\" href=\"/images/tongda.ico\" />"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "oa提示：不能登录oa"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "紧急通知：今日10点停电"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "office anywhere 2013"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "office anywhere 2015"
+        }, {
+            "match": "body_contains",
+            "content": "tongda.ico"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "oa"
+        }, {
+            "match": "title_contains",
+            "content": "办公"
+        }, {
+            "match": "body_contains",
+            "content": "class=\"style1\">新oa办公系统"
+        }]
+    ]
+}, {
+    "product": "JIRA",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "jira.webresources"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "atlassian.xsrf.token"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "ams-build-number"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "com.atlassian.plugins"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "system dashboard - "
+        }, {
+            "match": "body_contains",
+            "content": "content=\"jira"
+        }]
+    ]
+}, {
+    "product": "FishEye",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "set-cookie: fesessionid"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "fisheye-16.ico"
+        }]
+    ]
+}, {
+    "product": "Elasticsearch",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "build_hash"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "you know, for search"
+        }, {
+            "match": "server_contains",
+            "content": "dvrdvs-webs"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<html"
+        }, {
+            "match": "protocol_contains",
+            "content": "elastic"
+        }, {
+            "match": "header_contains",
+            "content": "realm=\"elasticsearch"
+        }]
+    ]
+}, {
+    "product": "MDaemon-email-server",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/worldclient.dll?view=main"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "mdaemon "
+        }],
+        [{
+            "match": "title_contains",
+            "content": "worldclient"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<strong>mdaemon/worldclient"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "esmtp mdaemon"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "pop3 mdaemon"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "pop mdaemon"
+        }]
+    ]
+}, {
+    "product": "ThinkPHP",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "thinkphp"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "think_template"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "href=\"http://www.thinkphp.cn\">thinkphp</a><sup>"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "document.cookie = 'thinkphp_show_page_trace='"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "thinkphp/library/"
+        }, {
+            "match": "body_contains",
+            "content": "thinkphp/base.php"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "THINK_VERSION"
+        }, {
+            "match": "body_contains",
+            "content": "THINK_START_TIME"
+        }, {
+            "match": "body_contains",
+            "content": "APP_PATH"
+        }]
+    ]
+}, {
+    "product": "致远-Seeyon-OA",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/seeyon/user-data/images/login/login.gif"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "用友致远a"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/yyoa/"
+        }, {
+            "match": "header_contains",
+            "content": "path=/yyoa"
+        }],
+        [{
+            "match": "server",
+            "content": "sy8044"
+        }, {
+            "match": "body_contains",
+            "content": "a6-v5企业版"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "seeyon"
+        }, {
+            "match": "body_contains",
+            "content": "seeyonproductid"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/seeyon/common/"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "var _ctxpath = '/seeyon'"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "a8-v5企业版"
+        }]
+    ]
+}, {
+    "product": "Yonyou-FE",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "fe协作"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "v_show"
+        }, {
+            "match": "body_contains",
+            "content": "v_hedden"
+        }]
+    ]
+}, {
+    "product": "zen_cart-shopping",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "shopping cart program by zen cart"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "set-cookie: zenid="
+        }],
+        [{
+            "match": "header_contains",
+            "content": "shoppingcartsession="
+        }]
+    ]
+}, {
+    "product": "DouPHP",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "content=\"douphp "
+        }]
+    ]
+}, {
+    "product": "TWCMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "href=\"/twcms/theme/default/css/global.css\""
+        }],
+        [{
+            "match": "title_contains",
+            "content": "twcms"
+        }]
+    ]
+}, {
+    "product": "Cicro",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "cicro"
+        }, {
+            "match": "body_contains",
+            "content": "cws"
+        }, {
+            "match": "body_contains",
+            "content": "content=\"cicro"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "index.files/cicro_userdefine.css"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "structure/index"
+        }, {
+            "match": "body_contains",
+            "content": "window.location.href="
+        }]
+    ]
+}, {
+    "product": "Joomla",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "content=\"joomla"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/media/system/js/core.js"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/media/system/js/mootools-core.js"
+        }]
+    ]
+}, {
+    "product": "phpBB",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "set-cookie: phpbb3_"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "httponly, phpbb3_"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "&copy;"
+        }, {
+            "match": "body_contains",
+            "content": "http://www.longluntan.com/zh/phpbb/"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "phpbb"
+        }, {
+            "match": "body_contains",
+            "content": "phpbb group\" />"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "start quick hack - phpbb statistics mod"
+        }]
+    ]
+}, {
+    "product": "HDWiki",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by hdwiki!"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"hdwiki"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "http://kaiyuan.hudong.com?hf=hdwiki_copyright_kaiyuan"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "hd_sid="
+        }]
+    ]
+}, {
+    "product": "KesionCMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/ks_inc/common.js"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "publish by kesioncms"
+        }]
+    ]
+}, {
+    "product": "思拓合众-CMSTop",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/css/cmstop-common.css"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/js/cmstop-common.js"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "cmstop-list-text.css"
+        }, {
+            "match": "body_contains",
+            "content": "<a class=\"poweredby\" href=\"http://www.cmstop.com\""
+        }]
+    ]
+}, {
+    "product": "易思-ESPCMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "powered by espcms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "espcms_search"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/templates/default/style/tempates_div.css"
+        }]
+    ]
+}, {
+    "product": "Foosun",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "created by dotnetcms"
+        }, {
+            "match": "body_contains",
+            "content": "for foosun"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "powered by www.foosun.net,products:foosun content manage system"
+        }]
+    ]
+}, {
+    "product": "PhpCMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "powered by"
+        }, {
+            "match": "body_contains",
+            "content": "http://www.phpcms.cn"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"phpcms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "powered by phpcms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "data/config.js"
+        }]
+    ]
+}, {
+    "product": "大汉网络-Hanweb-system",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "produced by 大汉网络"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<a href='http://www.hanweb.com' style='display:none'>"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<meta name='generator' content='大汉版通'>"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<meta name='author' content='大汉网络'>"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/jcms_files/jcms"
+        }]
+    ]
+}, {
+    "product": "Drupal",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "x-generator: drupal"
+        }, {
+            "match": "body_contains",
+            "content": "content=\"drupal"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "jquery.extend(drupal.settings"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/sites/default/files/"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/sites/all/modules/"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/sites/all/themes/"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "ace-drupal7prod"
+        }]
+    ]
+}, {
+    "product": "PhpWind",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by phpwind"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"phpwind"
+        }]
+    ]
+}, {
+    "product": "vBulletin",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by vbulletin"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"vbulletin"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "bbsessionhash"
+        }, {
+            "match": "header_contains",
+            "content": "bblastvisit"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "powered by vbulletin&trade;"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<!-- do not remove this copyright notice -->powered by < a href=\"https://www.vbulletin.com\" id=\"vbulletinlink\">"
+        }]
+    ]
+}, {
+    "product": "CmsEasy",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by cmseasy"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "http://www.cmseasy.cn/service_1.html"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"cmseasy"
+        }]
+    ]
+}, {
+    "product": "DedeCMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "power by dedecms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "http://www.dedecms.com/"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "dedecms"
+        }, {
+            "match": "body_contains",
+            "content": "/templets/default/style/dedecms.css"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<div><h3>dedecms error warning!</h3>"
+        }]
+    ]
+}, {
+    "product": "ECShop",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by ecshop"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "ecs_id"
+        }, {
+            "match": "body_contains",
+            "content": "content=\"ecshop"
+        }, {
+            "match": "body_contains",
+            "content": "id=\"ecs_cartinfo\""
+        }]
+    ]
+}, {
+    "product": "ASPCMS",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by aspcms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"aspcms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/inc/aspcms_advjs.asp"
+        }]
+    ]
+}, {
+    "product": "MetInfo",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by metinfo"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"metinfo"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "powered_by_metinfo"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/images/css/metinfo.css"
+        }]
+    ]
+}, {
+    "product": "Npoint",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by npoint"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"n点虚拟主机管理系统"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "js/ajax_x.js"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/inc/usercode.asp?npoint="
+        }]
+    ]
+}, {
+    "product": "Xiaomayi",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "powered by 小蚂蚁地方门户网站系统"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "antxiaouserslogin"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/template/ant/css/anthomecomm.css"
+        }]
+    ]
+}, {
+    "product": "CNVP-JCMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "publish by jcms2010"
+        }]
+    ]
+}, {
+    "product": "帝国CMS-EmpireCMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "powered by empirecms"
+        }],
+        [{
+            "match": "robots_contains",
+            "content": "empirecms"
+        }]
+    ]
+}, {
+    "product": "phpMyAdmin",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "set-cookie: phpmyadmin="
+        }],
+        [{
+            "match": "title_contains",
+            "content": "phpmyadmin "
+        }],
+        [{
+            "match": "body_contains",
+            "content": "pma_password"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "realm=\"phpmyadmin"
+        }]
+    ]
+}, {
+    "product": "Emlog",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "content=\"emlog\""
+        }]
+    ]
+}, {
+    "product": "IDEACMS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "powered by ideacms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "ejnav{ideacms:cursort"
+        }]
+    ]
+}, {
+    "product": "Shop7z",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "sitekeyword"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "id=\"www_zzjs_net_loding\""
+        }],
+        [{
+            "match": "body_contains",
+            "content": "function www_zzjs_net_change"
+        }]
+    ]
+}, {
+    "product": "TCCMS",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "power by tccms"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "index.php?ac=link_more"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "index.php?ac=news_list"
+        }]
+    ]
+}, {
+    "product": "iWebShop",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "_weburl"
+        }, {
+            "match": "body_contains",
+            "content": "class=\"pro_title\">iwebshop支付测试"
+        }]
+    ]
+}, {
+    "product": "SupeSite",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "supe_sid"
+        }]
+    ]
+}, {
+    "product": "LuManager",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "lumanager"
+        }]
+    ]
+}, {
+    "product": "EdmWebVideo",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "edmwebvideo"
+        }]
+    ]
+}, {
+    "product": "EDVR",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "edvs/edvr"
+        }]
+    ]
+}, {
+    "product": "Sun-ONE-Web-Server",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "sun[tm] one web server"
+        }],
+        [{
+            "match": "server_contains",
+            "content": "sun-one-web-server"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "server: sun-one-web-server"
+        }]
+    ]
+}, {
+    "product": "MVB2000-Call-Center",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "mvb2000"
+        }]
+    ]
+}, {
+    "product": "Eyou-Mail-system",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "eyou 邮件系统"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "eyouws"
+        }, {
+            "match": "body_contains",
+            "content": "cr\">eyoumail"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "emphpsid"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"亿邮电子邮件系统"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/tpl/login/user/images/dbg.png"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "var loginssl = document.form_login.login_ssl.value;"
+        }]
+    ]
+}, {
+    "product": "SonicWALL-Company's-product",
+    "rules": [
+        [{
+            "match": "banner_contains",
+            "content": "server: sonicwall"
+        }, {
+            "match": "header_contains",
+            "content": "server: sonicwall"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "this request is blocked by the sonicwall"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "web site blocked"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "document.getelementbyid(\"nsa_banner"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "sonicwall tz "
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "sonicwall pro "
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "sonicwall nsa "
+        }, {
+            "match": "banner_contains",
+            "content": "sonicwall sra "
+        }]
+    ]
+}, {
+    "product": "NetShare-VPN",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "netshare"
+        }]
+    ]
+}, {
+    "product": "网易邮箱-Netease-Enterprise-Mailbox",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "https://mail.qiye.163.com/js/loginjs.jsp"
+        }, {
+            "match": "body_contains",
+            "content": "https://entryhz.qiye.163.com/domain/domainEntLogin"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<span class=\"warn\">请您从网易企业邮箱用户登录页登录</span>"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "src=\"http://mimg.qiye.163.com/"
+        }, {
+            "match": "body_contains",
+            "content": "content=\"网易企业邮箱"
+        }],[{
+            "match": "body_contains",
+            "content": ".qiye.163.com"
+        }, {
+            "match": "body_contains",
+            "content": "网易企业邮箱"
+        }]
+    ]
+}, {
+    "product": "Srun3000-Billing-authentication-system",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "srun3000"
+        }]
+    ]
+}, {
+    "product": "Zhu-Ji-Bao",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "您访问的是主机宝服务器默认页"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "主机宝"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<a href=\"http://z.admin5.com/\" target="
+        }]
+    ]
+}, {
+    "product": "360-Total-Security",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "x-safe-firewall"
+        }, {
+            "match": "banner_contains",
+            "content": "x-safe-firewall: zhuji.360.cn"
+        }]
+    ]
+}, {
+    "product": "GPSweb",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "gpsweb"
+        }, {
+            "match": "server_contains",
+            "content": "gpsweb"
+        }, {
+            "match": "body_contains",
+            "content": "src=\"/gpsweb/js/add_string_prototype.js\""
+        }]
+    ]
+}, {
+    "product": "TurboMail",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "powered by turbomail"
+        }, {
+            "match": "body_contains",
+            "content": "wzcon1 clearfix"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "turbomail邮件系统"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<a href=\"http://www.turbomail.org\">powered by turbomail</a>"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "alt=\"turbomail 电子邮件系统\"/>"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "turbomail smtp"
+        }]
+    ]
+}, {
+    "product": "Parallels-Plesk-Panel",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "parallels ip holdings gmbh"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "default parallels plesk panel page"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "plesk-panel"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<img src=\"./img/panel-logo.png\" alt=\"parallels plesk panel\"></a>"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "default parallels plesk page"
+        }]
+    ]
+}, {
+    "product": "Telerik-Sitefinity",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "telerik.web.ui.webresource.axd"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"sitefinity"
+        }]
+    ]
+}, {
+    "product": "PageAdmin",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "content=\"pageadmin cms\""
+        }],
+        [{
+            "match": "body_contains",
+            "content": "/e/images/favicon.ico"
+        }]
+    ]
+}, {
+    "product": "Disqus",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "disqus_thread"
+        }]
+    ]
+}, {
+    "product": "ZendServer",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "zendserver"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "tp-link wr720n"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "zendserver"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "tp-link wr720n"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "router"
+        }]
+    ]
+}, {
+    "product": "Techbridge-Cameras-and-Surveillance",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "sorry,you need to use ie brower"
+        }]
+    ]
+}, {
+    "product": "PHPOA",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "admin_img/msg_bg.png"
+        }]
+    ]
+}, {
+    "product": "78OA",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/resource/javascript/system/runtime.min.js"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "license.78oa.com"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "78oa"
+        }, {
+            "match": "body_contains",
+            "content": "src=\"/module/index.php"
+        }]
+    ]
+}, {
+    "product": "WishOA",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "wishoa_webplugin.js"
+        }]
+    ]
+}, {
+    "product": "EasyTrace(botwave)",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "easytrace"
+        }, {
+            "match": "body_contains",
+            "content": "login_page"
+        }]
+    ]
+}, {
+    "product": "bxemail",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "百讯安全邮件系统"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "百姓邮局"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "请输入正确的电子邮件地址，如：abc@bxemail.com"
+        }]
+    ]
+}, {
+    "product": "Baidu-jiasule",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "__jsluid"
+        }, {
+            "match": "body_contains",
+            "content": "notice-jiasule"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "http/1.1 403"
+        }, {
+            "match": "body_contains",
+            "content": "static.jiasule.com/static/js/http_error.js"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "__jsluid"
+        }]
+    ]
+}, {
+    "product": "Incapsula",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "x-cdn: incapsula"
+        }, {
+            "match": "body_contains",
+            "content": "incapsula incident id"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "x-cdn: incapsula"
+        }, {
+            "match": "banner_contains",
+            "content": "x-cdn: incapsula"
+        }]
+    ]
+}, {
+    "product": "Baidu-Subaidu",
+    "rules": [
+        [{
+            "match": "server_contains",
+            "content": "yunjiasu"
+        }, {
+            "match": "body_contains",
+            "content": "data-orig-ref=\"su.baidu.com"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "id=\"yunjiasu_link"
+        }]
+    ]
+}, {
+    "product": "360-Webguard",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "360wzb"
+        }, {
+            "match": "server_contains",
+            "content": "360wzws"
+        }, {
+            "match": "header_contains",
+            "content": "wzws-ray: "
+        }, {
+            "match": "banner_contains",
+            "content": "360wzb"
+        }, {
+            "match": "banner_contains",
+            "content": "360wzws"
+        }, {
+            "match": "banner_contains",
+            "content": "wzws-ray: "
+        }]
+    ]
+}, {
+    "product": "Baidu-Anquanbao",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "x-powered-by-anquanbao"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "x-powered-by-anquanbao"
+        }]
+    ]
+}, {
+    "product": "Squid",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "server: squid"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "server: squid"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "router"
+        }]
+    ]
+}, {
+    "product": "JBoss-AS",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "manage this jboss as instance"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "welcome to jboss as"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "jbossas"
+        }, {
+            "match": "banner_contains",
+            "content": "jbossas"
+        }]
+    ]
+}, {
+    "product": "Ruijie-NBR-Router",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "ruijie - nbr"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<p>系统负荷过高，导致网络拥塞，建议降低系统负荷或重启路由器"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "class=\"line resource\" id=\"nbr_1\""
+        }]
+    ]
+}, {
+    "product": "ESAFENET-DLP",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "cdgserver3"
+        }]
+    ]
+}, {
+    "product": "Coremail",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/coremail/common/"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "coremail邮件系统"
+        }],
+        [{
+            "match": "protocol_contains",
+            "content": "smtp"
+        }, {
+            "match": "banner_contains",
+            "content": "coremail"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "coremail 电子邮局"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "action=\"/coremail/index.jsp"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "fmt_logoalt: \"coremail 电子邮件系统"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "coremail system</title>"
+        }]
+    ]
+}, {
+    "product": "HuaWei-Auth-Server",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "75718c9a-f029-11d1-a1ac-00c04fb6c223"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "auth-http server"
+        }],
+        [{
+            "match": "server_contains",
+            "content": "huawei auth-http server"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "huawei auth-http server"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "server:"
+        }]
+    ]
+},  {
+    "product": "EnterCRM",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "entercrm"
+        }]
+    ]
+}, {
+    "product": "VisualSVN",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "visualsvn server"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "realm=\"visualsvn server"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "realm=\"visualsvn server"
+        }]
+    ]
+}, {
+    "product": "Realor-GWT-System",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "瑞友天翼－应用虚拟化系统"
+        }]
+    ]
+}, {
+    "product": "VMware-vFabric",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "vfabric"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "ts01efd1fa"
+        }]
+    ]
+}, {
+    "product": "ICEFLOW-VPN",
+    "rules": [
+        [{
+            "match": "server_contains",
+            "content": "iceflow"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "iceflow vpn router"
+        }]
+    ]
+}, {
+    "product": "360-Enterprise-security",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "360entinst"
+        }, {
+            "match": "body_contains",
+            "content": "关于全网部署360私有云的通知"
+        }],
+        [{
+            "match": "title",
+            "content": "私有云控制中心"
+        }, {
+            "match": "body_contains",
+            "content": "/download/360inst.exe"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "360企业版"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "天擎"
+        }]
+    ]
+}, {
+    "product": "Yonyou-ERP-NC",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "/nc/servlet/nc.ui.iufo.login.index"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "用友新世纪"
+        }]
+    ]
+}, {
+    "product": "E-PLUGGER-SRM",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "lan12-jingbian-hong"
+        }, {
+            "match": "body_contains",
+            "content": "科研管理系统，北京易普拉格科技"
+        }]
+    ]
+}, {
+    "product": "Ipswitch-imailserver",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "myicalusername"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "server: ipswitch-imail"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "server: ipswitch-imail"
+        }]
+    ]
+}, {
+    "product": "Redmine",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "redmine"
+        }, {
+            "match": "body_contains",
+            "content": "authenticity_token"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "content=\"redmine"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "_redmine_session="
+        }],
+        [{
+            "match": "body_contains",
+            "content": "powered by <a href=\"http://www.redmine.org/"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "_redmine_session="
+        }]
+    ]
+}, {
+    "product": "MikroTik-Router",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "routeros"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "mikrotik"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "mikrotik routeros"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "mikrotik routeros"
+        }],
+        [{
+            "match": "protocol_contains",
+            "content": "snmp"
+        }, {
+            "match": "banner_contains",
+            "content": "routeros"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "mikrotik"
+        }]
+    ]
+}, {
+    "product": "Hikvision-Cameras-and-Surveillance",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "updatetips"
+        }, {
+            "match": "body_contains",
+            "content": "doc/page/login.asp"
+        }],
+        [{
+            "match": "server_contains",
+            "content": "nvr webserver"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "doc/page/login.asp"
+        }],
+        [{
+            "match": "server_contains",
+            "content": "nvr webserver"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "server: dvrdvs-webs"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "server: dnvrs-webs"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "server: dnvrs-webs"
+        }, {
+            "match": "banner_contains",
+            "content": "hik-b20"
+        }, {
+            "match": "body_contains",
+            "content": "hcnetvideoactivex.cab"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "window.location.href = \"/doc/page/login.asp?_"
+        }],
+        [{
+            "match": "server_contains",
+            "content": "app-webs"
+        }, {
+            "match": "banner_contains",
+            "content": "server: streamsystem4.0"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "codebase=\"../codebase/netvideoocx.cab"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "netvideoocx"
+        }],
+        [{
+            "match": "cert_contains",
+            "content": "o=hikvision, ou=ipcamera"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "\u0001\u001f!\u0001\u0003hik-b20-s login:"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "hikvision login:"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "dvrdvs login:"
+        }],
+        [{
+            "match": "protocol_contains",
+            "content": "telnet"
+        }, {
+            "match": "banner_contains",
+            "content": "netdvrdvs"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "classid=\"clsid:7b43048f-da7a-458f-af35-d825bdbb6816\" codebase=\"../codebase/netvideoocx.cab"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "classid=\"clsid:f030f48f-cd67-45d1-b622-a5d88a7bcfe9\" id=\"hcnetvideo"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "192.0.0.64 login:"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "server: app-webs/"
+        }],
+        [{
+            "match": "cert_contains",
+            "content": "subject: o=product root ca, ou=ip camera"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "dvrdvs-webs"
+        }],
+        [{
+            "match": "cert_contains",
+            "content": "o=hikvision, ou=dvrnvr"
+        }],
+        [{
+            "match": "cert_contains",
+            "content": "st=zj, l=hz, o=yunwei, ou=hik"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "hikvision company products"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "window.location.href = \"/doc/page/login.asp?_\" + (new date()).gettime()"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "ng-bind=\"olan.anonymous\" ng-click=\"login('anonymous')\""
+        }],
+        [{
+            "match": "body_contains",
+            "content": "css/login.css?version=\" + new date()"
+        }, {
+            "match": "body_contains",
+            "content": "var syslanguage= navigator.browserlanguage.tolowercase()"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "var szlanguage = syslanguage.substring(0,2)"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "ng-bind=\"olan.anonymous\" ng-click=\"login('anonymous')\">"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "id=\"divanonymous\""
+        }],
+        [{
+            "match": "body_contains",
+            "content": "id=\"divpswstrength\""
+        }, {
+            "match": "banner_contains",
+            "content": "hai210e"
+        }, {
+            "match": "body_contains",
+            "content": "<form action=\"/goform/formcobralogin"
+        }]
+    ]
+}, {
+    "product": "WDCP-Management-System",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "wdcp服务器"
+        }, {
+            "match": "title_contains",
+            "content": "lanmp_wdcp 安装成功"
+        }]
+    ]
+}, {
+    "product": "ZTE-Router",
+    "rules": [
+        [{
+            "match": "banner_contains",
+            "content": "router of zte corporation"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "zxr10"
+        }, {
+            "match": "banner_contains",
+            "content": "switch"
+        }, {
+            "match": "header_contains",
+            "content": "server: zte/rosng"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "server: zte/rosng"
+        }]
+    ]
+}, {
+    "product": "NvDVR",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "xwebplay"
+        }]
+    ]
+}, {
+    "product": "JCG-Wireless-Route",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "http://www.jcgcn.com"
+        }]
+    ]
+}, {
+    "product": "DVR-Camera",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "dvr webclient"
+        }]
+    ]
+}, {
+    "product": "UPUPW",
+    "rules": [
+        [{
+            "match": "title_contains",
+            "content": "upupw环境集成包"
+        }]
+    ]
+}, {
+    "product": "WAMP",
+    "rules": [
+        [{
+            "match": "body_contains",
+            "content": "<li><a href=\"phpsysinfo/\">phpsysinfo</a></li>"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "wampserver"
+        }],
+        [{
+            "match": "title_contains",
+            "content": "wampserver homepage"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "title and h1 heading"
+        }],
+        [{
+            "match": "body_contains",
+            "content": "<h1><abbr title=\"windows\">w</abbr><abbr title=\"apache\">a</abbr><abbr title=\"mysql\">m</abbr><abbr title=\"php\">p</abbr></h1>"
+        }]
+    ]
+}, {
+    "product": "Safedog",
+    "rules": [
+        [{
+            "match": "header_contains",
+            "content": "waf/2.0"
+        }, {
+            "match": "header_contains",
+            "content": "set-cookie: safedog"
+        }, {
+            "match": "header_contains",
+            "content": "safedog-flow-item="
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "safedog"
+        }, {
+            "match": "banner_contains",
+            "content": "set-cookie: safedog"
+        }],
+        [{
+            "match": "header_contains",
+            "content": "Safedog WAF"
+        }],
+        [{
+            "match": "banner_contains",
+            "content": "safedog-flow-item="
+        }]
+    ]
+}, {
+    "product": "Websecurity-WAF",
     "rules": [
         [{
             "match": "header_contains",
