@@ -1,0 +1,218 @@
+[    {
+    "product": "360-磐云",
+    "rules": [
+        [ 
+            {
+                "match": "body_contains",
+                "content": "禁止访问 | 安全防护系统"
+            },
+            {
+                "match": "body_contains",
+                "content": "如有疑问，请联系网站管理员，并提供以下 ID"
+            }
+            
+        ]
+    ]
+},
+    {
+        "product": "安恒-waf",
+        "rules": [
+            [
+                {
+                    "match": "title_contains",
+                    "content": "403"
+                },{
+                    "match": "body_contains",
+                    "content": "403"
+                }
+                ,{
+                    "match": "body_contains",
+                    "content": "Request ID"
+                }
+            ]
+        ]
+    },  
+    {
+        "product": "创宇盾-waf",
+        "rules": [
+            [ 
+                {
+                "match": "body_contains",
+                "content": "error_403"
+                },
+
+                {
+                    "match": "body_contains",
+                    "content": "http://www.365cyd.com"
+                }
+            ]
+        ]
+    },
+    {
+        "product": "cloudflare-waf",
+        "rules": [
+            [
+                {
+                    "match": "body_contains",
+                    "content": "Access denied</title>"
+                },
+
+                {
+                    "match": "body_contains",
+                    "content": "cloudflare.com"
+                }
+            ]
+        ]
+    },
+    {
+        "product": "Akamai-waf",
+        "rules": [
+            [ 
+                {
+                "match": "body_contains",
+                "content": "Access Denied"
+                },
+            {
+                    "match": "body_contains",
+                    "content": "on this server"
+                }
+                ,{
+                    "match": "body_contains",
+                    "content": "You don't have permission to access"
+                }
+            ]
+        ]
+    }, 
+    {
+        "product": "阿里云盾",
+        "rules": [
+            [ 
+                {
+                "match": "body_contains",
+                "content": "errors.aliyun.com/error.js"
+                },
+                {
+                    "match": "body_contains",
+                    "content": "由于您访问的URL有可能对网站造成安全威胁"
+                }
+                
+            ]
+        ]
+    },
+    {
+        "product": "安恒-玄武盾",
+        "rules": [
+            [ 
+                {
+                    "match": "body_contains",
+                    "content": "&copy; 云防护"
+                },
+                {
+                    "match": "body_contains",
+                    "content": "站点不存在 - 云防护"
+                }
+                
+            ]
+        ]
+    },{
+        "product": "华为云WAF",
+        "rules": [
+            [ 
+                {
+                    "match": "body_contains",
+                    "content": "CloudWAF"
+                },
+                {
+                    "match": "body_contains",
+                    "content": "您可以前往WAF控制台进行误报屏蔽设置"
+                }
+                
+            ], [ 
+                {
+                    "match": "body_contains",
+                    "content": "HuaweiCloudWAF"
+                },
+                {
+                    "match": "body_contains",
+                    "content": "Web application firewall"
+                }
+                
+            ]
+        ]
+    },{
+        "product": "云锁(yunsuo)-waf",
+        "rules": [
+            [
+                {
+                    "match": "header_contains",
+                    "content": "security_session_verify"
+                }
+            ],
+            [
+                {
+                    "match": "header_contains",
+                    "content": "yunsuo_session_verify"
+                }
+            ],
+            [
+                {
+                    "match": "body_contains",
+                    "content": "href=\"http://bbs.yunsuo.com.cn"
+                }
+            ],
+            [
+                {
+                    "match": "body_contains",
+                    "content": "<img class=\"yunsuologo\""
+                }
+            ]
+        ]
+    },{
+        "product": "华为云WAF",
+        "rules": [
+            [ 
+                {
+                    "match": "body_contains",
+                    "content": "CloudWAF"
+                },
+                {
+                    "match": "body_contains",
+                    "content": "您可以前往WAF控制台进行误报屏蔽设置"
+                }
+                
+            ], [ 
+                {
+                    "match": "body_contains",
+                    "content": "HuaweiCloudWAF"
+                },
+                {
+                    "match": "body_contains",
+                    "content": "Web application firewall"
+                }
+                
+            ]
+        ]
+    },{
+        "product": "腾讯T-Sec Web应用防火墙(WAF)",
+        "rules": [
+            [
+                {
+                    "match": "body_contains",
+                    "content": "https://imgcache.qq.com/qcloud/security/static/imgs/attackIntercept.svg"
+                }, {
+                    "match": "body_contains",
+                    "content": "AccessDeny"
+                }
+            ],
+            [
+                {
+                    "match": "body_contains",
+                    "content": "很抱歉，您提交的请求可能对网站造成威胁，请求已被管理员设置的策略阻断"
+                }, {
+                    "match": "body_contains",
+                    "content": "AccessDeny"
+                }
+            ]
+        ]
+    }
+]
