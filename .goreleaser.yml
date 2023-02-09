@@ -1,0 +1,24 @@
+builds:
+    - binary: scan
+      main: cmd/main.go
+      id: "myproject"
+      goos:
+        - linux
+        # - windows
+        - darwin
+      goarch:
+        - amd64
+        - 386
+        # - arm
+        - arm64
+
+project_name: subproj1
+
+archives:
+    - id: tgz
+      format: tar.gz
+      replacements:
+          darwin: macOS
+      format_overrides:
+          - goos: windows
+            format: zip
