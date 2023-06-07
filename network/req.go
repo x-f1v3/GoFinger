@@ -81,6 +81,7 @@ func GetOtherReq(Uri string, args ...interface{}) string {
 func GetIcoHashOnce(url string) string {
 
 	req := requests.Requests()
+	req.SkipVerify()
 	return GetIcoHash(req,url,[]byte(GetOtherReq("",url)))
 
 
@@ -97,7 +98,7 @@ func xegexpjs(reg string, resp string) (reslut1 [][]string) {
 
 func GetIcoHash(req *requests.Request, url string, Content []byte) string {
 	url = strings.Trim(url, "/")
-	faviconpaths := xegexpjs(`href="(.*?favicon....)"`, string(Content))
+	faviconpaths := xegexpjs(`href="*(.*?favicon....)"*`, string(Content))
 	var faviconpath string
 	if len(faviconpaths) > 0 {
 		fav := faviconpaths[0][1]
@@ -181,7 +182,6 @@ retry:
 	if resqRedirect != nil {
 		resp = resqRedirect
 	}
-
 	req_data = json_new.FetchResult{
 		Url:          url,
 		Content:      resp.Content(),
